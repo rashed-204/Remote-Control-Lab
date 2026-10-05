@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remote-Control-Lab</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #101827;
+      color: white;
+      text-align: center;
+      padding: 40px 16px;
+    }
+    .panel {
+      max-width: 420px;
+      margin: 30px auto;
+      padding: 24px;
+      background: #1e293b;
+      border-radius: 16px;
+    }
+    button {
+      padding: 12px 20px;
+      border: 0;
+      border-radius: 8px;
+      background: #16a34a;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #status {
+      margin-top: 20px;
+      color: #86efac;
+    }
+  </style>
+</head>
+<body>
+  <h1>Remote-Control-Lab</h1>
+  <p>My Personal Remote Access Project</p>
+
+  <div class="panel">
+    <h2>Device Connection</h2>
+    <p>Welcome to your remote-control lab.</p>
+    <button onclick="showStatus()">Test Connection</button>
+    <p id="status">Status: Not connected</p>
+  </div>
+
+  <script>
+    function showStatus() {
+      document.getElementById("status").textContent =
+        "Status: Webpage is working!";
+    }
+  </script>
+</body>
+</html>
